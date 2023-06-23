@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/contact.css">
+        <script src="javascript.js"></script>
+    
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon1/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon1/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon1/favicon-16x16.png">
+        <link rel="manifest" href="./favicon1/site.webmanifest">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <title>Aesious | About</title>
+    </head>
+<body>
+    <div id="loader"></div>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                &#x2630;
+            </label>
+            <a href="#" class="logo"><img src="./images/aesious_logo.jpg" alt="Aesious Logo"></a>
+            <ul>
+                <li class="blue"><a href="/index.html#home" class="active">Home</a></li>
+                <li class="yellow"><a href="/about.html">About</a></li>
+                <li class="red"><a href="/languages.html">Languages</a></li>
+                <li class="green"><a href="./blogs.html">Blogs</a></li>
+                <li class="active orange"><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="height"></div>
+    <div class="progress-container">
+        <div class="progress-bar" id="bar"></div>
+    </div>
+    <div class="nav-bar">
+        <a href="#information">Information</a> | 
+        <a href="#enquire">Enquire-Now</a> | 
+        <a href="#work">Work-with-Us</a></div>
+    <div class="information">
+        <div class="heading"><h1>Contact Us</h1></div>
+        <div class="row">
+            <div class="column column1">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="text">
+                    Call Us
+                </div>
+                <div class="information">
+                    +91 911 220 6128
+                </div>
+            </div>
+            <div class="column column2">
+                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="text">
+                    Visit Us
+                </div>
+                    
+                    <div class="address">
+                        S.No. 233, Jaidev Dembra, <br>Pinak apartment, ROW HOUSE, c!o, <br>2/3/7/4 Sapphires, off main road, <br>Aundh, Pune, Maharashtra 411007
+                    </div>
+            </div>
+            <div class="column column1">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="text">
+                    Mail Us
+                </div>
+                <div class="information">
+                    info@aesious.com
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="enquire">
+            <div class="height"></div>
+            <div class="heading"><h1>Enquire Now</h1></div>
+            <div class="main-form">
+                <form class="form" onsubmit="sendEmail(); reset(); return false;">
+                    <div class="user-input">
+                        <input type="text" class="blue" required>
+                        <label>Full Name *</label>
+                    </div>
+                    <div class="user-input">
+                        <input type="email" class="yellow" id="email" required>
+                        <label>Email *</label>
+                    </div>
+                    <div class="user-input">
+                        <input type="text" class="red" id="contact" required>
+                        <label>Contact *</label>
+                    </div>
+                    <fieldset>
+                        <legend> Languages</legend>
+                        <div class="checkboxes">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="German">
+                                        <input type="checkbox" class="checkbox" id="German" name="German" value="German">
+                                        German</label>
+                                    </td>
+                                    <td>
+                                        <label for="Spanish">
+                                        <input type="checkbox" class="checkbox" id="Spanish" name="Spanish" value="Spanish">
+                                        Spanish</label><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="French">
+                                        <input type="checkbox" class="checkbox" id="French" name="French" value="French">
+                                        French</label>
+                                    </td>
+                                    <td>
+                                        <label for="Japanese">
+                                        <input type="checkbox" class="checkbox" id="Japanese" name="Japanese" value="Japanese">
+                                        Japanese</label><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="Chinese">
+                                        <input type="checkbox" class="checkbox" id="Chinese" name="Chinese" value="Chinese">
+                                        Chinese</label>
+                                    </td>
+                                    <td>
+                                        <label for="English">
+                                        <input type="checkbox" class="checkbox" id="English" name="English" value="English">
+                                        English</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <br><br>
+                    <div class="user-input">
+                    <textarea class="comment-message" required></textarea>
+                    <label>Message *</label>
+                    </div>
+                    <input type="submit" value="Submit" class="submit">
+
+                </form>
+            </div>
+    </div>
+    <div id="work">
+        <div class="height"></div>
+        <div class="heading"><h1>Work With Us</h1></div>
+        <div class="main-form">
+            <form class="form" onsubmit="sendEmail(); reset(); return false;">
+                <div class="user-input">
+                    <input type="text" class="blue" required>
+                    <label>Full Name *</label>
+                </div>
+                <div class="user-input">
+                    <input type="email" class="blue" required>
+                    <label>Email *</label>
+                </div>
+                <div class="user-input">
+                    <input type="text" class="red" id="contact" required>
+                    <label>Contact *</label>
+                </div>
+                <fieldset>
+                    <legend> Languages</legend>
+                    <div class="checkboxes">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="German_work">
+                                    <input type="checkbox" class="checkbox" id="German_work" name="German_work" value="German">
+                                    German</label>
+                                </td>
+                                <td>
+                                    <label for="Spanish_work">
+                                    <input type="checkbox" class="checkbox" id="Spanish_work" name="Spanish_work" value="Spanish">
+                                    Spanish</label><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="French_work">
+                                    <input type="checkbox" class="checkbox" id="French_work" name="French_work" value="French">
+                                    French</label>
+                                </td>
+                                <td>
+                                    <label for="Japanese_work">
+                                    <input type="checkbox" class="checkbox" id="Japanese_work" name="Japanese_work" value="Japanese">
+                                    Japanese</label><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="Chinese_work">
+                                    <input type="checkbox" class="checkbox" id="Chinese_work" name="Chinese_work" value="Chinese">
+                                    Chinese</label>
+                                </td>
+                                <td>
+                                    <label for="English_work">
+                                    <input type="checkbox" class="checkbox" id="English_work" name="English_work" value="English">
+                                    English</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset><br>
+                <label for="file">Your Resume : </label>
+                <input type="file" id="file" name="file" class="file-input">
+                <br><br>
+                <div class="user-input">
+                    <textarea class="comment-message" required></textarea>
+                    <label>Message *</label>
+                </div>
+                <input type="submit" value="Submit" class="submit">
+            </form>
+        </div>
+    </div>
+    <br>
+    <script>
+        //loader
+        var load = document.getElementById("loader");
+            window.addEventListener("load", function(){
+            load.style.display = "none";
+            })
+
+        // Scroll Indication
+        window.onscroll = function() {progressBar()};
+
+        function progressBar() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("bar").style.width = scrolled + "%";
+        }
+    </script>
+</body>
+</html>

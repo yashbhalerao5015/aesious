@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- <link rel="stylesheet" href="../styles/blog-panel.css"> -->
+    <link rel="stylesheet" href="../styles/blogs.css">
+    <script defer src="node_modules/swup/dist/Swup.umd.js"></script>
+    <script defer src="../javascript.js"></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon1/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon1/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon1/favicon-16x16.png">
+    <link rel="manifest" href="../favicon1/site.webmanifest">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+    <title>Aesious | Blogs</title>
+</head>
+    <body class="orange-image">
+        <header>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    &#x2630;
+                </label>
+                <a href="#" class="logo"><img src="../images/aesious_logo.jpg" alt="Aesious Logo"></a>
+                <ul>
+                    <li class="blue"><a href="/index.html#home" class="active">Home</a></li>
+                    <li class="yellow"><a href="/about.html">About</a></li>
+                    <li class="red"><a href="/languages.html">Languages</a></li>
+                    <li class="active green"><a href="/blogs.html">Blogs</a></li>
+                    <li class="orange"><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="height"></div>
+        <div class="progress-container">
+            <div class="progress-bar orange" id="bar"></div>
+        </div>
+        <div class="blog-page" id="page"><br>    
+            <button onclick="shrink(this.id)">X</button>
+            <div class="blog-text">
+                <div class="heading"><h2>Why to learn German Language</h2></div>
+                <div class="content">
+                    Learning a foreign language offers numerous practical benefits that can enhance both your personal and professional life. Here are some practical benefits of learning a foreign language:
+                    <br><br><span class="point">1.	Career Advancement: </span><br>In an increasingly globalized world, employers value individuals who can speak multiple languages. Knowing a foreign language can give you a competitive edge in the job market and open up opportunities for international career paths. It demonstrates adaptability, cultural sensitivity, and cross-cultural communication skills.
+                    <br><br><span class="point">2.	Academic Pursuits: </span><br>Knowing a foreign language can be advantageous for academic pursuits. It opens up opportunities to study abroad, access foreign literature, conduct research in other languages, and participate in international academic conferences.
+                    <br><br><span class="point">3.	Language Learning Skills: </span><br>Learning a foreign language also enhances your overall language learning skills. Once you've mastered one language, acquiring additional languages becomes easier. You become more attuned to grammar, vocabulary, and language structures.
+                    <br><br><span class="point">4.	Improved career opportunities: </span><br>Proficiency in a foreign language can open up a wide range of career opportunities. Many companies operate globally and seek employees who can communicate effectively with international clients or partners. Knowing a foreign language can make you a valuable asset in fields such as business, tourism, international relations, customer service, translation, and teaching.
+                    <br><br><span class="point">5.	Improved native language skills: </span><br>Learning a foreign language often leads to a better understanding of grammar, vocabulary, and sentence structure in your native language. It helps you gain a deeper appreciation of your own language's nuances and complexities. You become more aware of language patterns and can express yourself more eloquently and precisely.
+                    <br><br><span class="point">6.	Enhanced communication skills: </span><br>Learning a foreign language improves your overall communication skills, even in your native language. You become more aware of nuances, tone, and cultural differences in communication. This heightened awareness enables you to express yourself more effectively, be a better listener, and understand others' perspectives with greater empathy.
+                    <br><br>Overall, learning a foreign language offers a multitude of practical benefits and is a valuable and enriching experience that expands your horizons, improves your cognitive abilities,cultural understanding and personal growth and opens up a world of opportunities. Whether for personal or professional reasons, it is a skill that offers lifelong benefits.
+                </div>
+                <!-- <div class="date">22-3-2</div> -->
+                <div class="buttons">
+                    <div class="fb-button" data-href="https://www.aesious.com" data-layout="" data-size="large" >
+                        <a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.aesious.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">&nbsp;Share</a>
+                    </div>
+                    <div class="tw-button">
+                        <a class="fa fa-twitter" target="_blank" href="https://www.twitter.com/intent/tweet?url=http://www.aesious.com&text=Check%20out%20this%20Blog!">
+                        Tweet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Scroll Indication
+            window.onscroll = function() {progressBar()};
+
+            function progressBar() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("bar").style.width = scrolled + "%";
+            }
+        </script>
+    </body>
+</html>

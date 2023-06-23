@@ -1,0 +1,282 @@
+body{
+    background-image: url("../images/finalt_map1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav-bar{
+    text-align: center;
+    margin:2em auto 0;
+    word-spacing: 30px;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    width: 40%;
+}
+
+.nav-bar a{
+    color: black;
+}
+
+.nav-bar a:hover{
+    text-decoration: underline;
+    color: rgb(78, 78, 78);
+}
+
+.heading{
+    font-size: 1.2em;
+    text-align: center;
+    margin:2em auto 0;
+    width: 40%;
+    text-transform: uppercase;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1{
+    font-weight: 600;
+    background: linear-gradient(to right ,#8888ff 30%, #66f366 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.column{
+    background-color: transparent;
+    height: 350px;
+    margin: 5em 3em 0em;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.column1{
+    min-width: 250px;
+}
+
+.column2{
+    min-width: 350px;
+    letter-spacing: 0.05em;
+    line-height: 1.8em;
+}
+
+.text{
+    text-align: center;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.address{
+    margin-top: 2vw;
+    text-align: center;
+    font-size: 1.0em;
+    text-transform: capitalize;
+}
+
+.information{
+    text-align: center;    
+    margin-top: 2vw; 
+}
+
+.fa-solid{
+    font-size: 45px;
+    border-radius: 20%;
+    padding: 15px;
+    border: 1px solid rgb(49, 49, 75);
+    color: rgb(49, 49, 75);
+    margin: 30px 0 30px;
+    transition: all .5s ease;
+}
+
+.icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column:hover .fa-solid{
+    transform: scale(1.1);
+    color:  rgb(75, 75, 113);
+
+}
+
+.main-form{
+    font-size: 1.2em;
+    max-width: 60%;
+    align-items: center;
+    margin: 2em auto 0;
+    padding: 6em 4em 4em;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+       -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/********** FORM ***********/
+
+input:not([type=submit]):not([type=file]):not([type=checkbox]), textarea{
+    border-image: linear-gradient(to right ,#0000CC, #FFCC00, #FE0000, #01CC00, #FE9900, #6F2F9F) 1;
+}
+
+form legend{
+    font-weight: 600;
+    background: linear-gradient(to right ,#0000CC 10%, #FFCC00 25%, #FE0000 40%, #01CC00 55%, #FE9900 70%, #6F2F9F 85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.checkbox{
+   height: 1.4em;
+    /* width: 20px;
+    margin: 10px 5px 20px 20px ; */
+}
+
+input[type="checkbox"]
+{
+    vertical-align:middle;
+    position: relative;
+}
+
+textarea {
+    min-height: 15px;
+    padding: 15px;
+}
+
+.submit:hover{
+    background: linear-gradient(to right ,#b7b7ff , #b1ffb1);
+}
+
+/*********************************************
+RESPONSIVE
+**********************************************/
+
+@media only screen and (max-width:1250px){
+    .main-form{
+        max-width: 80%;
+        padding: 4em 4em 5em;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .nav-bar{
+        word-spacing: 20px;
+        width: 50%;
+    }
+    .heading{
+        width: 50%;
+        padding: 30px;
+        font-size: 1em;
+    }
+    .column{
+        margin: 5em 1em;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .nav-bar{
+        width: 60%;
+    }
+    .heading{
+        width: 60%;
+        padding: 25px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .column{
+        height: 350px;
+        margin: 2em auto 1em;
+        max-width: 350px;
+    }
+    .main-form{
+        font-size : 0.85em
+    }
+    .checkbox{
+        height: 16px;
+        width: 16px;
+        margin: 7px 5px 10px 10px ;
+    }
+}
+
+@media only screen and (max-width: 775px){
+    .nav-bar{
+        word-spacing: 15px;
+        width: 90%;
+    }
+    .heading{
+        width: 80%;
+        padding: 20px;
+    }
+    .text{
+        text-align: center;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    .column{
+        height: 300px;
+    }
+    .address{
+        text-align: center;
+        font-size: 0.9em;
+    } 
+    .information{
+        text-align: center;
+        font-size: 0.9em;
+    }
+    .fa-solid{
+        font-size: 40px;
+        border-radius: 20%;
+        padding: 15px;
+    }
+    .main-form{
+        font-size : 0.8em;
+        max-width: 90%;
+    }
+    .checkbox{
+        height: 14px;
+        width: 14px;
+        margin: 7px 3px 3px 3px ;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .nav-bar{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 395px){
+    .nav-bar{
+        word-spacing: 5px;
+        font-size: 0.8em;
+    }
+    .heading{
+        font-size: 0.9em;
+    }
+    .column{
+        min-width: 270px;
+    }
+}

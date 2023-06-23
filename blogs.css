@@ -1,0 +1,200 @@
+body{
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+}
+
+.blog-page{
+    position: relative;
+    width: 60%;
+    height:100%;
+    margin: auto;
+    transition: transform 5s ease;
+    transform: translateY(800px);
+    animation: slideIn ease 2s;
+    animation-fill-mode: forwards;
+    transition: opacity .6s ease;
+    background-color: rgba(255, 255, 255, 0.489);
+    /* background: linear-gradient(rgba(255, 255, 255, 0.407), #C0E7F5); */
+}
+
+.blog-page button{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #989898;
+    background-color: transparent;
+    transition: transform .8s ease;
+    margin-left: 90%;
+}
+
+.page button:hover{
+    transform: rotate(360deg);
+}
+
+.blog-text{
+    padding: 0 4vw;
+}
+
+.blog-text .heading{
+    font-size: 1.5em;
+    margin: 1em 0 1.5em;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.blog-text .content{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+
+.content span.point{
+    line-height: 2.5em;
+    font-weight: 500;
+}
+
+.blog-text .date{
+   padding: 3em 0 3em;
+   font-size: 1em;
+}
+
+/*****************************************
+Share Buttons
+******************************************/
+
+.buttons{
+    display: flex;
+    padding: 3em 0;
+    margin: auto;
+    justify-content: center;
+}
+
+.fb-button, .tw-button{
+    margin: 0em 0.5em;
+    width: 80px;
+    padding: 2px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fa-facebook, .fb-button a, .fa-twitter, .tw-button a{
+    color: white;
+}
+
+.fb-button{
+    background-color: #3B5998;
+}
+
+.tw-button{
+    background-color: #00acee;
+}
+
+.fb-button:hover{
+    background-color: #1b4296;
+}
+
+.tw-button:hover{
+    background-color: #0099d5;
+}
+
+/*****************************************
+Colours
+******************************************/
+
+.blue-image{
+    background: #C0E7F5;
+}
+
+.yellow-image{
+    background: #F8F6CE;
+}
+
+.red-image{
+    background: #fbbbbb;
+}
+
+.green-image{
+    background: #C9FDD3;
+}
+
+.orange-image{
+    background: #fcce9d;
+}
+
+.purple-image{
+    background: #E2CBFF;
+}
+
+.progress-bar.blue{
+    background: #7dd4f3 !important;
+}
+
+.progress-bar.yellow{
+    background: #faf58d !important;
+}
+
+.progress-bar.red{
+    background: #f99090 !important;
+}
+
+.progress-bar.green{
+    background: #90fda6 !important;
+}
+
+.progress-bar.orange{
+    background: #ffb96f !important;
+}
+
+.progress-bar.purple{
+    background: #c397f9 !important;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        /* transform: translateY(0); */
+    }
+    100% {
+        transform: translateY(0);
+     }
+}
+
+@media only screen and (max-width: 1300px){
+    .blog-page{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .blog-page{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    .page button{
+        margin-left: 85%;
+    }
+    .blog-text .heading{
+        font-size: 1.25em;
+    }
+    .blog-text .content{
+        font-size: 1.05em;
+    }
+    .blog-text .date{
+       padding: 2em 0 2em;
+       font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .blog-text .heading{
+        font-size: 1.1em;
+    }
+}

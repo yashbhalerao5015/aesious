@@ -1,0 +1,447 @@
+body{
+  background-image: url("../images/world.jpg");
+  background-size: 50%;
+  overflow: hidden;
+}
+
+/******************************
+Swatches
+*******************************/
+
+.swatch {
+  display: block;
+  text-align: center;
+  position: relative;
+  /* width: 50%; */
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: auto; */
+}
+
+.swatch a div {
+  width:170px;
+  height: 590px;
+  position: absolute;
+  top:2em;
+  border-radius: 5px;
+  /* border-top: solid 2px rgba(0, 0, 0, .2);
+  border-left: solid 3px rgba(255, 255, 255, .2);
+  border-bottom: solid 3px rgba(0, 0, 0, .2); */
+  text-align: center;
+  box-sizing: border-box;
+  transform-origin: center 90%;
+  display: inline-block;
+  backface-visibility: hidden;
+  margin-left: -80px;
+  /* transform: rotate(0deg); */
+}
+
+/* Circle Dot */
+
+/* div:before {
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-color:white;
+  display: inline-block;
+  border-radius: 8px;
+  bottom: 10px;
+  position: absolute;
+  margin-left: -8px;
+} */
+
+/******************************
+Swatches - Animation
+*******************************/
+
+.swatch #card1 {
+  background-color: #0000CC;
+  background-image: url("../images/languages/french.jpg");
+  background-size: contain;
+  animation: swatch-purple-motion 2s;
+  transform: rotate(-65deg);
+}
+.swatch #card2 {
+  background-color:#FFCC00;
+  background-image: url("../images/languages/spanish.jpg");
+  background-size: contain;
+  animation: swatch-blue-motion 2s;
+  transform: rotate(-40deg);
+}
+.swatch #card3 {
+  background-color:#FE0000;
+  background-image: url("../images/languages/german.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: swatch-green-motion 2s;
+  transform: rotate(-15deg);
+}
+.swatch #card4 {
+  background-color:#01CC00;
+  background-image: url("../images/languages/japanese.jpg");
+  background-size: contain;
+  animation: swatch-yellow-motion 2s;
+  transform: rotate(15deg);
+}
+.swatch #card5 {
+  background-color:#FE9900;
+  background-image: url("../images/languages/chinese.jpg");
+  background-size: contain;
+  animation: swatch-orange-motion 2s;
+  transform: rotate(40deg);
+}
+.swatch #card6 {
+  background-color:#6F2F9F;
+  background-image: url("../images/languages/english.jpg");
+  background-size: contain;
+  animation: swatch-red-motion 2s;
+  transform: rotate(65deg);
+}
+
+@keyframes swatch-purple-motion {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-65deg);
+  }    
+}
+
+@keyframes swatch-blue-motion {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-40deg);
+  }
+}
+
+@keyframes swatch-green-motion {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes swatch-yellow-motion {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes swatch-orange-motion {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(40deg);
+  }
+}
+
+@keyframes swatch-red-motion {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(65deg);
+  }
+}
+
+/******************************
+Swatches - Hover
+*******************************/
+
+.swatch #card1:hover {
+  filter: brightness(80%);
+  /* background-color: #0000cca1;
+  z-index: 10; */
+}
+
+.swatch #card2:hover {
+  filter: brightness(80%);
+  /* background-color:#ffcc0091;
+  z-index: 10; */
+}
+
+.swatch #card3:hover {
+  filter: brightness(80%);
+  /* background-color:#fe0000ae;
+  z-index: 10; */
+}
+
+.swatch #card4:hover {
+  filter: brightness(80%);
+  /* background-color:#00cc00ac;
+  z-index: 10; */
+}
+
+.swatch #card5:hover {
+  filter: brightness(80%);
+  /* background-color:#fe9800b3;
+  z-index: 10; */
+}
+
+.swatch #card6:hover {
+  filter: brightness(80%);
+  /* background-color:#6f2f9fb8;
+  z-index: 10; */
+}
+
+/******************************
+Popup- Content
+*******************************/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 150px auto;
+  padding: 20px;
+  /* background:transparent; */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  width: 70%;
+  min-height: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+/******************************
+Popup- Content
+*******************************/
+
+.popcon{
+  color: cadetblue;
+  font-size: 2.3em;
+}
+
+.popcon1{
+  font-size: 30px;
+  font-weight: 1000;
+  color: white;
+}
+
+.content{
+  font-style: italic;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: white;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+/******************************
+Popup - Close
+*******************************/
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.popup .close-blue:hover {
+  /* color: #0000CC; */
+  color: #0079FE;
+}
+
+.popup .close-yellow:hover {
+  color: #FFCC00;
+}
+
+.popup .close-red:hover {
+  /* color: #FE0000; */
+  color: #FE3231;
+}
+
+.popup .close-green:hover {
+  color: #01CC00;
+}
+
+.popup .close-orange:hover {
+  /* color: #FE9900; */
+  color: #EA7A2E;
+}
+
+.popup .close-purple:hover {
+  color: #6F2F9F;
+}
+
+.popup .content {
+  color: white;
+  max-height: 30%;
+  overflow: auto;
+}
+
+/******************************
+Responsive
+*******************************/
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .swatch a div {
+    width:150px;
+    height: 540px;
+    top:5em;
+    margin-left: -72px;
+  }
+  .popcon1{
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .swatch a div {
+    width:140px;
+    height: 500px;
+    top:7em;
+  }
+  .popcon1{
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .swatch a div {
+    width:126px;
+    height: 440px;
+    top:8em;
+    margin-left: -65px;
+  }
+  .popcon1{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 840px){
+  .swatch a div {
+    width:115px;
+    height: 400px;
+    top:9em;
+  }
+}
+
+@media screen and (max-width: 720px){
+  body{
+    overflow-y: scroll;
+  }
+  
+  .swatch {
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    position:none;
+    /* width: 50%; */
+    width:312px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: auto; */
+  }
+
+  .swatch a div {
+
+    height: 90px;
+    position: relative;
+    top:2em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+  }
+
+  .swatch #card1 {
+    transform: rotate(0deg);
+    background-image: url("../images/languages/french-resp.jpg");
+    /* background-size: contain; */
+    /* background-size: 300px; */
+    /* background-repeat: no-repeat; */
+    animation: slideInLeft 2s ease;
+  }
+  .swatch #card2 {
+    transform: rotate(0deg);
+    background-image: url("../images/languages/spanish-resp.jpg");
+    animation: slideInRight 2s ease;
+    /* animation-delay: 1s; */
+  }
+  .swatch #card3 {
+    transform: rotate(0deg);
+    background-image: url("../images/languages/german-resp.jpg");
+    animation: slideInLeft 2s ease;
+    /* animation-delay: 2s; */
+  }
+  .swatch #card4 {
+    transform: rotate(0deg);
+    background-image: url("../images/languages/japanese-resp.jpg");
+    animation: slideInRight 2s ease;
+    /* animation-delay: 3s; */
+  }
+  .swatch #card5 {
+    transform: rotate(0deg);
+    background-image: url("../images/languages/chinese-resp.jpg");
+    animation: slideInLeft 2s ease;
+    /* animation-delay: 4s; */
+  }
+  .swatch #card6 {
+    transform: rotate(0deg);
+    background-image: url("../images/languages/english-resp.jpg");
+    animation: slideInRight 2s ease;
+    /* animation-delay: 5s; */
+  }
+
+  @keyframes slideInLeft {
+    0%{
+      transform: translateX(-100%);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slideInRight {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+  }
+}

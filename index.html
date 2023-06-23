@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/style.css">
+        <script src="javascript.js"></script>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon1/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon1/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon1/favicon-16x16.png">
+        <link rel="manifest" href="./favicon1/site.webmanifest">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+        
+        <title>Aesious</title>
+    </head>
+    <body>
+        <div id="loader"></div>
+        <header>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    &#x2630;
+                </label>
+                <a href="#" class="logo"><img src="./images/aesious_logo.jpg" alt="Aesious Logo"></a>
+                <ul>
+                    <li class="active blue"><a href="/index.html#home" class="active">Home</a></li>
+                    <li class="yellow"><a href="/about.html">About</a></li>
+                    <li class="red"><a href="/languages.html">Languages</a></li>
+                    <li class="green"><a href="./blogs.html">Blogs</a></li>
+                    <li class="orange"><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--****Home****-->
+        <div class="height" id="home"></div>
+        <div class="progress-container">
+            <div class="progress-bar" id="bar"></div>
+        </div>  
+        <div class="banner"></div>
+
+        <!--****About****-->
+        <div class="about" >
+            <div id="marquee">
+                <div id="div1">
+                    <img src="./images/languages.jpg" id="m1" width="100%" alt="Flags" /> 
+                </div>
+                <div id="div2">
+                    <img src="./images/languages.jpg" id="m2" width="100%" alt="Flags" aria-hidden="true"/>  
+                </div>
+            </div><br><br>
+            <div class="opening-text">
+                Welcome to Aesious <br>
+                <div class="aesious">
+                    <span class="blue">A</span>
+                    <span class="yellow">E</span>
+                    <span class="red">S</span>
+                    <span class="green">I</span>
+                    <span class="orange">O</span>
+                    <span class="purple">U</span>
+                    <span class="red">S</span>
+                </div>
+                <b>-Up your language </b>
+                <br>
+                <span class="red">Aesious</span> is a Foreign Language Institute where <span class="red">learning meets fun.</span> <br>
+                Aesious is not only about teaching the languages but making the process of learning easier for the students.<br>
+                Although we know there are many ways to learn, we end up learning in the usual way. Well, not anymore! In Aesious Institute – Knowledge is acquired by <span class="red">performing activities, playing games, skits, quizzes</span> and much more – A part where the course becomes interactive and you learn a language in a fun way. Learning a new language should never be a burden. It in fact opens your mind, gives you a different perspective and creates a new path that keeps your life interesting.<br>
+                Speaking a foreign Language <span class="red">opens up opportunities</span> to connect with language speakers <span class="red">worldwide</span>, forging friendships, and building professional networks. It allows you to engage in <span class="red">cross-cultural exchanges</span>, participate in <span class="red">language exchange programs</span>, and develop a deeper understanding of different perspectives.
+            </div>
+            <div class="sections">
+
+                <!-- Section 1 -->
+                <section>
+                    <div class="container">
+                        <div class="left reveal-left"></div>
+                        <div class="right reveal-right">
+                            <div class="content">
+                                <h1>Courses We Offer</h1>
+                                <p>Our courses are suitable for <l class="red">international exams</l> and <l class="red">all school and college boards exams.</l> (SSC Board, HSC Board, CBSE Board, IB Board) Your success is our success.
+                                    Another exciting thing about us is that we also provide a variety of courses, crash courses, <l class="red">FREE Workshops</l> and customized courses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 2 -->
+                <section>
+                    <div class="container1">   
+                        <div class="left1 reveal-left">
+                            <div class="content">
+                                <h1>Importance of Learning a Foreign Language  - photo : no education goes waste</h1>
+                                <p>Learning a foreign Language has its own perks. 
+                                    Irrespective of your career field, (having a foreign language in your resume) knowing a foreign language plays a vital role in your professional as well as personal life. <br>
+                                <a href="./blogs/blog1.html">Click Here to know more benefits/ perks</a></p>
+                            </div>
+                        </div>
+                        <div class="right1 reveal-right"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!--**** Map ****-->
+        <div class="map" align="center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.229954069731!2d73.79748241081053!3d18.563668767783422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfdf41e8574f%3A0x6ff8dea1e12aac4c!2sAesious%20Institute%20of%20Foreign%20Languages!5e0!3m2!1sen!2sin!4v1684683350210!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!--**** Contact Us ****-->
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+                <div class="contact-form">
+                    <form class="form" onsubmit="sendEmail(); reset(); return false;">
+                        <div class="user-input">
+                            <input type="text" class="blue" required>
+                            <label>Full Name *</label>
+                        </div>
+                        <div class="user-input">
+                            <input type="email" class="yellow" id="email" required>
+                            <label>Email *</label>
+                        </div>
+                        <div class="user-input">
+                            <input type="text" class="red" id="contact" required>
+                            <label>Contact *</label>
+                        </div>
+                        <!-- Checkbox -->
+                        <fieldset>
+                            <legend> Languages</legend>
+                            <div class="checkboxes">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label for="German">
+                                            <input type="checkbox" class="checkbox" id="German" name="German" value="German">
+                                            German</label>
+                                        </td>
+                                        <td>
+                                            <label for="Spanish">
+                                            <input type="checkbox" class="checkbox" id="Spanish" name="Spanish" value="Spanish">
+                                            Spanish</label><br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="French">
+                                            <input type="checkbox" class="checkbox" id="French" name="French" value="French">
+                                            French</label>
+                                        </td>
+                                        <td>
+                                            <label for="Japanese">
+                                            <input type="checkbox" class="checkbox" id="Japanese" name="Japanese" value="Japanese">
+                                            Japanese</label><br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="Chinese">
+                                            <input type="checkbox" class="checkbox" id="Chinese" name="Chinese" value="Chinese">
+                                            Chinese</label>
+                                        </td>
+                                        <td>
+                                            <label for="English">
+                                            <input type="checkbox" class="checkbox" id="English" name="English" value="English">
+                                            English</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </fieldset>
+                        <br><br>
+                        <div class="user-input">
+                            <textarea class="comment-message" required></textarea>
+                            <label>Message *</label>
+                        </div>
+                        <input type="submit" value="Submit" class="submit">
+                    </form>
+                </div>
+        </div>
+        <footer>
+            <div class="social">
+                <div class="icons">
+                    <div class="icon facebook"><a href="#" class="fa fa-facebook"></a></div>
+                    <div class="icon instagram"><a href="#" class="fa fa-instagram"></a></div>
+                    <div class="icon linkedin"><a href="#" class="fa fa-linkedin"></a></div>
+                </div>
+            </div>
+        </footer>
+     
+        <script src=" https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            
+            //loader
+            var load = document.getElementById("loader");
+            
+            window.addEventListener("load", function(){
+                load.style.display = "none";
+            })
+            
+            // Scroll Indication
+            window.onscroll = function() {progressBar()};
+
+            function progressBar() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("bar").style.width = scrolled + "%";
+            }
+            
+            function sendEmail(){
+            Email.send({
+                SecureToken : "f30882f3-f7e6-4a61-9423-3dec5955a16c",
+                To : "vinitamvh@gmail.com",
+                From : "vinita.h77@gmail.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+                message => alert(message)
+                );
+            }
+            </script>
+    </body>
+</html>
+
+<!-- Your security token is f30882f3-f7e6-4a61-9423-3dec5955a16c Please take note of this. -->
+<!-- // Email.send({
+// Host : "smtp.gmail.com",
+// Username : "vinita.h77@gmail.com",
+// Password : "gmailvinita7",
+// To : 'vinitamvh@gmail.com',
+// From : document.getElementById("email").value,
+// Subject : "This is the subject",
+// Body : "And this is the body"
+// }).then(
+// message => alert(message)
+// ); -->
